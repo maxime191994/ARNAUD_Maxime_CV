@@ -1,0 +1,392 @@
+/* Styles généraux */
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	/* Texte blanc */
+	background: linear-gradient(to right, #1f1f1f, #0a0a0a);
+	/* Dégradé de noir à gris foncé */
+	background-size: 400% 400%;
+	/* Taille du dégradé */
+	animation: gradientAnimation 15s ease infinite;
+	/* Animation du dégradé */
+}
+
+h1 {
+	font-family: "Honk", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"MORF" 25,
+		"SHLN" 50;
+}
+
+/* Animation du dégradé */
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+		/* Début du dégradé à gauche */
+	}
+
+	50% {
+		background-position: 100% 50%;
+		/* Milieu du dégradé à droite */
+	}
+
+	100% {
+		background-position: 0% 50%;
+		/* Fin du dégradé à gauche */
+	}
+}
+
+/* Styles de la navbar */
+.navbar {
+	padding: 1rem 0;
+}
+
+.navbar-brand {
+	font-weight: bold;
+	color: #fff;
+	/* Texte blanc */
+}
+
+.navbar-brand:hover {
+	font-weight: bold;
+	color: #aaaaaa;
+	/* Texte blanc */
+}
+
+.navbar-nav .nav-link {
+	color: #fff;
+	/* Texte blanc */
+}
+
+.navbar-nav .nav-link:hover {
+	color: #ccc;
+	/* Texte gris clair au survol */
+}
+
+/* Styles spécifiques pour le menu hamburger en mode sombre */
+.light-mode .custom-toggler {
+	border-color: #1f1f1f;
+	/* Couleur du menu hamburger en mode sombre */
+}
+
+/* Styles spécifiques pour le menu hamburger en mode clair */
+.custom-toggler {
+	border-color: #f0f0f0;
+	/* Couleur du menu hamburger en mode clair */
+	background-color: #f0f0f0;
+
+}
+
+
+/* À Propos */
+.about-content {
+	display: flex;
+	flex-direction: row;
+	/* Alignement à gauche */
+	align-items: center;
+}
+
+.about-text {
+	flex: 1;
+}
+
+.about-text .name-title {
+	font-size: 10em;
+	/* Taille du titre en version desktop */
+	margin: 0;
+	padding: 0;
+}
+
+/* Styles supplémentaires pour les petits écrans (mode mobile) */
+@media (max-width: 768px) {
+	.about-text .name-title {
+		font-size: 7em;
+		/* Taille du titre en version mobile */
+	}
+}
+
+.about-text .subtitle {
+	font-size: 1.5em;
+	/* Taille du sous-titre */
+}
+
+.about-image {
+	flex: 1;
+	text-align: center;
+	/* Alignement du texte */
+}
+
+.about-image img {
+	border: 5px solid #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 60%;
+	/* Largeur de l'image */
+	border-radius: 50%;
+	/* Forme ronde */
+}
+
+/* Informations personnelles */
+.info-card {
+	background-color: #f5f5f5;
+	/* Couleur de fond gris clair */
+	color: #333;
+	/* Texte gris foncé */
+	font-weight: bold;
+	padding: 20px;
+	margin-top: 20px;
+	width: 100%;
+	/* Largeur de la carte */
+}
+
+.info-card ul {
+	list-style: none;
+	padding: 0;
+}
+
+.info-card li {
+	margin-bottom: 10px;
+}
+
+/* Styles spécifiques pour chaque icône au survol */
+.html-icon:hover {
+	color: #F16529;
+	/* Couleur orange */
+}
+
+.css-icon:hover {
+	color: #1C76B8;
+	/* Couleur bleu foncé */
+}
+
+.js-icon:hover {
+	color: #EEC037;
+	/* Couleur jaune */
+}
+
+.bootstrap-icon:hover {
+	color: #7411f6;
+	/* Couleur violette */
+}
+
+.php-icon:hover {
+	color: #8D96C0;
+	/* Couleur mauve */
+}
+
+.sql-icon:hover {
+	color: #DC7939;
+	/* Couleur bleu marine */
+}
+
+.react-icon:hover {
+	color: #2AB2FE;
+	/* Couleur turquoise */
+}
+
+.postgresql-icon:hover {
+	color: #386595;
+	/* Couleur bleu marine */
+}
+
+.wordpress-icon:hover {
+	color: #28799E;
+	/* Couleur bleu clair */
+}
+
+.ia-icon:hover {
+	color: #D10E31;
+	/* Couleur corail */
+}
+
+.veille-icon:hover {
+	color: #4b0082;
+	/* Couleur indigo */
+}
+
+.vscode-icon:hover {
+	color: #4DB0F7;
+	/* Couleur bleu foncé */
+}
+
+/* Styles light mode */
+body.light-mode {
+	color: #1f1f1f;
+	/* Texte sombre */
+	background: linear-gradient(to right, #c9c9c9, #fff);
+	/* Dégradé de gris clair à blanc */
+}
+
+.light-mode h1 {
+	font-family: "Honk", system-ui;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings:
+		"MORF" 25,
+		"SHLN" 0;
+}
+
+.light-mode .navbar {
+	padding: 1rem 0;
+}
+
+.light-mode .navbar-brand {
+	color: #1f1f1f;
+	/* Texte sombre */
+}
+
+.light-mode .navbar-nav .nav-link {
+	color: #1f1f1f;
+	/* Texte sombre */
+}
+
+.light-mode .navbar-nav .nav-link:hover {
+	color: #333333;
+	/* Texte gris clair au survol */
+}
+
+
+/* À Propos */
+.light-mode .about-content {
+	color: #fff;
+	/* Texte blanc */
+}
+
+.light-mode .about-text {
+	color: #fff;
+	/* Texte blanc */
+}
+
+.light-mode .about-text .name-title {
+	color: #fff;
+	/* Texte blanc */
+}
+
+.light-mode .about-text .subtitle {
+	color: #1f1f1f;
+	/* Texte blanc */
+	font-weight: bold;
+}
+
+.light-mode .about-image img {
+	border: 5px solid #1f1f1f;
+	/* Bordure sombre */
+}
+
+/* Informations personnelles */
+.light-mode .info-card {
+	background-color: #333;
+	/* Couleur de fond gris foncé */
+	color: #f5f5f5;
+	/* Texte blanc */
+}
+
+/* Styles spécifiques pour chaque icône au survol en mode sombre */
+.light-mode .html-icon {
+	color: #F16529;
+	/* Couleur orange */
+}
+
+.light-mode .css-icon {
+	color: #1C76B8;
+	/* Couleur bleu foncé */
+}
+
+.light-mode .js-icon {
+	color: #EEC037;
+	/* Couleur jaune */
+}
+
+.light-mode .bootstrap-icon {
+	color: #7411f6;
+	/* Couleur violette */
+}
+
+.light-mode .php-icon {
+	color: #8D96C0;
+	/* Couleur mauve */
+}
+
+.light-mode .sql-icon {
+	color: #DC7939;
+	/* Couleur bleu marine */
+}
+
+.light-mode .react-icon {
+	color: #2AB2FE;
+	/* Couleur turquoise */
+}
+
+.light-mode .postgresql-icon {
+	color: #386595;
+	/* Couleur bleu marine */
+}
+
+.light-mode .wordpress-icon {
+	color: #28799E;
+	/* Couleur bleu clair */
+}
+
+.light-mode .ia-icon {
+	color: #D10E31;
+	/* Couleur corail */
+}
+
+.light-mode .veille-icon {
+	color: #4b0082;
+	/* Couleur indigo */
+}
+
+.light-mode .vscode-icon {
+	color: #4DB0F7;
+	/* Couleur bleu foncé */
+}
+
+#myBtn {
+	display: none;
+	/* Caché par défaut */
+	position: fixed;
+	/* Position fixe */
+	bottom: 20px;
+	/* Distance par rapport au bas de la fenêtre */
+	right: 20px;
+	/* Distance par rapport à la droite de la fenêtre */
+	z-index: 99;
+	/* Assure que le bouton soit au-dessus des autres éléments */
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* Couleur de fond semi-transparente */
+	color: #000;
+	/* Couleur du texte */
+	border-radius: 50%;
+	/* Forme ronde */
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+	/* Transition douce des couleurs */
+}
+
+#myBtn:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	/* Couleur de fond semi-transparente au survol */
+	color: #fff;
+	/* Couleur du texte au survol */
+}
+
+.light-mode .carousel-control-prev-icon,
+.light-mode .carousel-control-next-icon {
+	filter: invert(100%);
+	/* Inverser la couleur pour les flèches */
+}
+
+.footer-icons i {
+  color:#cccccc;
+}
+
+.light-mode .footer-icons i {
+  color:#1f1f1f;
+}

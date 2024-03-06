@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio CV - ARNAUD Maxime</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<!-- Barre de navigation -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#">Arnaud Maxime</a>
+				<!-- Bouton de hamburger pour mobile -->
+				<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#about"><i class="fas fa-user"></i> À propos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Expérience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i> Formation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills"><i class="fas fa-code"></i> Compétences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#motivation"><i class="fas fa-lightbulb"></i> Motivation</a>
+						</li>
+						<li class="nav-item">
+							<button onclick="toggleMode()" id="modeToggleBtn" class="btn btn-dark">Mode Clair</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Section À Propos -->
+		<section id="about" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 order-lg-1 order-md-1">
+						<div class="about-text">
+							<h1 class="name-title">
+								ARNAUD <br />
+								Maxime
+							</h1>
+							<p class="subtitle">Développeur Web Full Stack</p>
+							<br />
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 order-lg-2 order-md-2">
+						<div class="about-image">
+							<img
+								id="profile-img"
+								src="https://media.licdn.com/dms/image/D4D03AQGcWXx1eZeeDA/profile-displayphoto-shrink_800_800/0/1706722017205?e=1715212800&v=beta&t=oy4isuKprsHLZxGm_Hy5zf8E0Ii5C5G4IjfX59F8faw"
+								alt="Photo de profil de Maxime Arnaud"
+								class="img-fluid rounded-circle"
+								width="400"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 align-self-center text-center">
+						<p>
+							Je suis un jeune développeur web fraîchement diplômé, passionné par le monde de la technologie et de l'informatique. Actuellement à la recherche de nouveaux défis, mon objectif est d'accroître mes compétences et
+							de m'intégrer dans une équipe dynamique. Ma soif d'apprendre et ma motivation à relever des défis font de moi un collaborateur dévoué et désireux de contribuer au succès de projets innovants. Je suis convaincu
+							que chaque expérience professionnelle est une opportunité d'enrichir mes connaissances et de développer mes compétences techniques et relationnelles. Je travaille également sur des projets fictifs pour rester à
+							jour et je serais enchanté de vous présenter mes diverses réalisations lors d'un entretien.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<div class="info-card">
+							<h2>Informations personnelles</h2>
+							<ul>
+								<li><strong>Nom:</strong> ARNAUD Maxime</li>
+								<li><strong>Date de naissance:</strong> 19 Juin 1994</li>
+								<li><strong>Adresse:</strong> 36 Avenue de l'Europe, 69140, Rillieux-la-Pape</li>
+								<li><strong>Téléphone:</strong> <a href="tel:0619470109">Contact Téléphone </a></li>
+								<li><strong>Email:</strong> <a href="mailto:marnaud194@gmail.com">Contact Mail</a></li>
+								<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maxime-arnaud-250739152/">Mon profil Linkedin</a></li>
+								<li><strong>Emplois francs:</strong> Eligible emplois francs (QPV)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Expérience professionnelle -->
+		<section id="experience" class="py-5">
+			<div class="container">
+				<h2 class="section-title text-center mb-4">Expériences professionnelles</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<div class="card-body text-dark">
+								<h3 class="card-title">Assistant Logistique</h3>
+								<p class="card-text">Olympique Lyonnais</p>
+								<p class="card-text"><i class="fas fa-calendar-alt"></i> Mai 2020 - Février 2024</p>
+								<p class="card-text">Gestion des dotations et préparations de commandes, des bon de livraison et gestion des stocks informatique</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<div class="card-body text-dark">
+								<h3 class="card-title">Conseiller Vente</h3>
+								<p class="card-text">Castorama</p>
+								<p class="card-text"><i class="fas fa-calendar-alt"></i> Mars 2018 - Septembre 2019</p>
+								<p class="card-text">conseils de vente dans le secteur du bâtiment, la préparation de commandes, la gestion des relations client et l'établissement de devis.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card mb-4">
+							<div class="card-body text-dark">
+								<h3 class="card-title">Vernisseur Ebéniste</h3>
+								<p class="card-text">Vernilac Saint Barth</p>
+								<p class="card-text"><i class="fas fa-calendar-alt"></i> Septembre 2017 - Janvier 2018</p>
+								<p class="card-text">Finitions de l'ameublement (Vernis, laques et teinte hydro), préparation des support et colorimétrie</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="education" class="py-5">
+			<div class="container">
+				<h2 class="section-title text-center mb-4">Formation</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card mb-3">
+							<div class="card-body text-dark">
+								<h5 class="card-title"><i class="fas fa-graduation-cap"></i> Graduate Développeur Web Full Stack</h5>
+								<p class="card-text">Studi - 2024</p>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<div class="card-body text-dark">
+								<h5 class="card-title"><i class="fas fa-graduation-cap"></i> Master 1 MEEF</h5>
+								<p class="card-text">Université Louis Lumière Lyon II - 2022</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-3">
+							<div class="card-body text-dark">
+								<h5 class="card-title"><i class="fas fa-graduation-cap"></i> Licence Sciences de l'éducation</h5>
+								<p class="card-text">Université Louis Lumière Lyon II - 2021</p>
+							</div>
+						</div>
+						<div class="card mb-3">
+							<div class="card-body text-dark">
+								<h5 class="card-title"><i class="fas fa-graduation-cap"></i> Diplôme des Métiers d'arts Habitat, Décors et mobiliers</h5>
+								<p class="card-text">SEPR Lyon - 2015</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Compétences -->
+		<section id="skills" class="py-5">
+			<div class="container">
+				<h2 class="section-title text-center mb-4">Compétences</h2>
+				<div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<!-- Première diapositive -->
+						<div class="carousel-item active">
+							<div class="row justify-content-center">
+								<div class="col-4 text-center">
+									<i class="fab fa-html5 fa-5x html-icon"></i>
+									<h4 class="mt-3">HTML</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fab fa-css3-alt fa-5x css-icon"></i>
+									<h4 class="mt-3">CSS</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fab fa-js fa-5x js-icon"></i>
+									<h4 class="mt-3">JavaScript</h4>
+								</div>
+							</div>
+						</div>
+						<!-- Deuxième diapositive -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="col-4 text-center">
+									<i class="fab fa-bootstrap fa-5x bootstrap-icon"></i>
+									<h4 class="mt-3">Bootstrap</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fab fa-php fa-5x php-icon"></i>
+									<h4 class="mt-3">PHP</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fas fa-database fa-5x sql-icon"></i>
+									<h4 class="mt-3">SQL</h4>
+								</div>
+							</div>
+						</div>
+						<!-- Troisième diapositive -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="col-4 text-center">
+									<i class="fab fa-react fa-5x react-icon"></i>
+									<h4 class="mt-3">ReactNative</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fas fa-database fa-5x postgresql-icon"></i>
+									<h4 class="mt-3">PostgreSQL</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fab fa-wordpress-simple fa-5x wordpress-icon"></i>
+									<h4 class="mt-3">WordPress</h4>
+								</div>
+							</div>
+						</div>
+						<!-- Quatrième diapositive -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="col-4 text-center">
+									<i class="fas fa-robot fa-5x ia-icon"></i>
+									<h4 class="mt-3">Intelligence Artificielle</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fas fa-search fa-5x veille-icon"></i>
+									<h4 class="mt-3">Veille Technologique</h4>
+								</div>
+								<div class="col-4 text-center">
+									<i class="fas fa-code fa-5x vscode-icon"></i>
+									<h4 class="mt-3">Visual Studio Code</h4>
+								</div>
+								<!-- Ajoutez plus d'éléments de carousel pour les autres compétences -->
+							</div>
+						</div>
+					</div>
+					<!-- Contrôles du carrousel -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Motivation -->
+		<section id="motivation" class="py-5">
+			<div class="container text-center">
+				<h2 class="section-title mb-4">Ce qui m'anime</h2>
+				<div class="motivation-text">
+					<p>
+						Ce qui m'anime, c'est une insatiable curiosité pour les nouvelles technologies et un désir ardent d'apprendre et de progresser en permanence. Malgré mon absence d'expérience dans le secteur du développement, ma
+						motivation à me plonger dans ce domaine est indéniable. Je suis constamment en quête de nouvelles connaissances et je m'efforce de rester à la pointe des dernières avancées technologiques grâce à une veille active et
+						une participation régulière à des événements de l'industrie. Outre ma passion pour le développement web et la résolution de problèmes complexes, j'ai également un engagement profond pour le travail d'équipe.
+						Travailler en collaboration avec d'autres talents me stimule et me pousse à donner le meilleur de moi-même pour atteindre nos objectifs communs. En dehors du monde professionnel, mes hobbies reflètent ma passion pour
+						l'adrénaline et la créativité. Je suis un fervent amateur de course automobile et de moto, cherchant toujours de nouvelles sensations fortes sur la piste. En tant qu'éducateur et joueur de football, j'apprécie
+						également le dynamisme et l'esprit d'équipe que ce sport incarne. La musique et l'art occupent également une place importante dans ma vie, m'inspirant et nourrissant ma créativité au quotidien. Chaque journée est une
+						opportunité pour moi d'explorer de nouveaux horizons, que ce soit dans le domaine professionnel ou dans mes loisirs. Je suis convaincu que cette combinaison d'intérêts et de passions contribue à enrichir ma vie et à
+						me motiver à atteindre mes objectifs avec enthousiasme et détermination.
+					</p>
+				</div>
+			</div>
+		</section>
+		<button onclick="topFunction()" id="myBtn" class="btn btn-light" title="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+		<!-- Footer -->
+		<footer class="py-4 text-center">
+			<div class="container">
+				<!-- Mini-titre avec icônes -->
+				<h6>Mes partenaires au quotidien:</h6>
+				<ul class="list-inline footer-icons">
+					<li class="list-inline-item">
+						<a href="https://github.com/" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
+					</li>
+					<!-- 1 -->
+					<li class="list-inline-item">
+						<a href="https://stackoverflow.com/" title="Stack Overflow"><i class="fab fa-stack-overflow fa-3x"></i></a>
+					</li>
+					<!-- 2 -->
+					<li class="list-inline-item">
+						<a href="https://developer.mozilla.org/en-US/docs/Web" title="MDN Web Docs"><i class="fab fa-firefox fa-3x"></i></a>
+					</li>
+					<!-- 3 -->
+					<li class="list-inline-item">
+						<a href="https://devdocs.io/" title="DevDocs"><i class="fas fa-book fa-3x"></i></a>
+					</li>
+					<!-- 4 -->
+					<li class="list-inline-item">
+						<a href="https://css-tricks.com/" title="CSS-Tricks"><i class="fab fa-css3-alt fa-3x"></i></a>
+					</li>
+					<!-- 6 -->
+					<li class="list-inline-item">
+						<a href="https://developers.google.com/" title="Google Developers"><i class="fab fa-google fa-3x"></i></a>
+					</li>
+					<!-- 9 -->
+				</ul>
+
+				<p>Maxime Arnaud &copy; 2024</p>
+			</div>
+		</footer>
+
+		<!-- Script JavaScript pour les animations -->
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+		<script>
+			function toggleMode() {
+			    var body = document.body;
+			    body.classList.toggle("light-mode");
+
+			    var modeToggleBtn = document.getElementById("modeToggleBtn");
+			    if (body.classList.contains("light-mode")) {
+			        modeToggleBtn.textContent = "Mode Sombre";
+			    } else {
+			        modeToggleBtn.textContent = "Mode Clair";
+			    }
+
+			    // Toggle navbar color
+			    var navbar = document.querySelector(".navbar");
+			    navbar.classList.toggle("light-mode");
+
+			         }
+		</script>
+
+		<script>
+			window.onscroll = function () {
+			    scrollFunction()
+			};
+
+			function scrollFunction() {
+			    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			        document.getElementById("myBtn").style.display = "block";
+			    } else {
+			        document.getElementById("myBtn").style.display = "none";
+			    }
+			}
+
+			function topFunction() {
+			    document.body.scrollTop = 0; // Pour les navigateurs Chrome, Firefox, IE et Opera
+			    document.documentElement.scrollTop = 0; // Pour Safari
+			}
+		</script>
+	</body>
+</html>
